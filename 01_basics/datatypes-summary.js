@@ -33,10 +33,32 @@ const myFunction= function(){
 console.log('hello world');
 }
 
-console.log(typeof(bigNumber));
-console.log(typeof(outsideTemp));
-console.log(typeof(heros));
-console.log(typeof(myObj));
-console.log(typeof(myFunction));
-console.log(typeof(id));
-console.log(typeof(anotherId));
+// console.log(typeof(bigNumber));
+// console.log(typeof(outsideTemp));
+// console.log(typeof(heros));
+// console.log(typeof(myObj));
+// console.log(typeof(myFunction));
+// console.log(typeof(id));
+// console.log(typeof(anotherId));
+
+
+//************************************************************************ */
+//Stack(Primitve),Heap(Non-PRIMITIVE)
+
+let myYoutubeName="bhaskarsatyabola"
+
+let anotherName=myYoutubeName;
+anotherName="shubhamsataybola"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let userOne={
+    email:"user@google.com",
+    upi:"bsbs11@oksbiii",
+}
+let userTwo=userOne
+userTwo.email="bsbs@google.com"
+
+console.log(userOne)
+
