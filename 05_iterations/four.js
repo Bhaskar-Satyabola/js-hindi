@@ -7,7 +7,7 @@ const myObj={
 
 
 for (const key in myObj) {
-   console.log(`${key} SHORTCUT IS FOR ${myObj[key]}`)
+//    console.log(`${key} SHORTCUT IS FOR ${myObj[key]}`)
 }
 
 const programming=['js','ruby','python','html']

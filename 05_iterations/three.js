@@ -18,16 +18,16 @@ map.set('US','United states')
 map.set('fr','france') 
 map.set('IN','india')  
 
-// console.log(map);
+console.log(map);
 for (const [key,value] of map) {
     console.log(key, ':- ', value);
 }
 
-const myObj={
-    "game1":"nfs",
-    "game2":"gta"
-}
+// const myObj={
+//     "game1":"nfs",
+//     "game2":"gta"
+// }
 
-for (const [key,value] of myObj) {
-    console.log(key,":-",value)
-}
+// for (const [key,value] of myObj) {
+//     // console.log(key,":-",value)
+// }
