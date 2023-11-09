@@ -119,7 +119,7 @@ validateGuess(guess)
    }
    function displayGuess(guess){
     userInput.value=""
-    guesses.innerHTML += `${guess}`
+    guesses.innerHTML += `${guess} ,`
     numGuess++;
     remaining.innerHTML=`${11-numGuess}`
    }
