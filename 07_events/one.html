@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color:aliceblue">
+    <h2>Amazing Image</h2>
+    <div></div>
+    <ul id="images">
+        <li><img width="200px" src="https://source.unsplash.com/random" id="photoshop" alt=""></li>
+        <li><img width="200px" src="https://source.unsplash.com/random" id="japan" alt=""></li>
+        <li><img width="200px" src="https://source.unsplash.com/random" id="river" alt=""></li>
+        <li><img width="200px" src="https://source.unsplash.com/random" id="owl" alt=""></li>
+        <li><img width="200px" src="https://source.unsplash.com/random" id="prayer" alt=""></li>
+        <li><a style=" color:aliceblue" href="https://google.com" id="google">Google</a></li>
+    </ul>
+</div>
+</body>
+<script>
+    // document.getElementById("photoshop").onclick=function(){
+    //     alert("Photoshop cLICKED")
+    // }
+
+    //attachEvent()
+//jQuery
+
+
+//type,timestamp,defaultPrevented
+//target,toElement,srcElement,currentTarget
+//clientX,clientY,screenX,screenY
+//altkey,ctrlkey,shiftkey,keyCode
+
+document.getElementById('images').addEventListener('click',function(e){
+console.log("Clicked in the ul");
+},false)
+
+document.getElementById('owl').addEventListener('click',function(e){
+console.log("Clicked in the owl");
+e.stopPropagation()
+},false)
+
+document.getElementById('google').addEventListener('click',function(e){
+    e.preventDefault()
+    console.log("google clicked")
+    
+},false)
+</script>
+</html>
